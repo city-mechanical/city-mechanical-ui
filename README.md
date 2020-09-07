@@ -1,1 +1,1 @@
-ui
+@city-mechanical/ui
