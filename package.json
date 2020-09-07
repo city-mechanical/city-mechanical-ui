@@ -25,7 +25,7 @@
     "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.mdx\""
   },
   "author": "William Crutchfield",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/city-mechanical/city-mechanical-ui/issues"
   },
