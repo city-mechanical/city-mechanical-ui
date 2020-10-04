@@ -1,1 +1,1 @@
-export { default as CmiHead } from "./components/head";
+export { default as CmiMeta } from "./components/meta";

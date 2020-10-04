@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import PropTypes from "prop-types";
 
 const propTypes = {
@@ -10,9 +9,9 @@ const defaultProps = {
   title: "City Mechanical, Inc.",
 };
 
-const CmiHead = ({ children, ...props }) => {
+const CmiMeta = ({ children, ...props }) => {
   return (
-    <Head>
+    <React.Fragment>
       <meta charSet="utf-8" />
       <link rel="shortcut icon" href="/icons/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -158,11 +157,11 @@ const CmiHead = ({ children, ...props }) => {
       <meta name="msapplication-TileColor" content="#2b5797" />
       <meta name="theme-color" content="#ffffff"></meta>
       <title>{props.title}</title>
-    </Head>
+    </React.Fragment>
   );
 };
 
-CmiHead.propTypes = propTypes;
-CmiHead.defaultProps = defaultProps;
+CmiMeta.propTypes = propTypes;
+CmiMeta.defaultProps = defaultProps;
 
-export default CmiHead;
+export default CmiMeta;
