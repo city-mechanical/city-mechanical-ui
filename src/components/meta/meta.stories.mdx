@@ -1,15 +1,18 @@
 import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import Head from "next/head";
 import CmiMeta from "./meta";
 
 <Meta title={"Components/CmiMeta"} />
 
-# Get started
+# CmiMeta
 
-With `MDX` we can define a story for `CmiMeta` right in the middle of our
-markdown documentation.
+A component that provides standard meta tags that should be present on all CMI webpages. This component is meant to be included in `_app.js` in all next projects.
 
 <Preview>
   <Story name="Default">
-    <CmiMeta />
+    <Head>
+      <CmiMeta />
+      <title>(Page Title) - City Mechanical, Inc.</title>
+    </Head>
   </Story>
 </Preview>

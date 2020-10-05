@@ -1,18 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-const propTypes = {
-  title: PropTypes.string,
-};
-
-const defaultProps = {
-  title: "City Mechanical, Inc.",
-};
-
-const CmiMeta = ({ children, ...props }) => {
+const CmiMeta = () => {
   return (
     <React.Fragment>
-      <meta charSet="utf-8" />
       <link rel="shortcut icon" href="/icons/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="manifest" href="/manifest.json" />
@@ -156,12 +146,8 @@ const CmiMeta = ({ children, ...props }) => {
       />
       <meta name="msapplication-TileColor" content="#2b5797" />
       <meta name="theme-color" content="#ffffff"></meta>
-      <title>{props.title}</title>
     </React.Fragment>
   );
 };
-
-CmiMeta.propTypes = propTypes;
-CmiMeta.defaultProps = defaultProps;
 
 export default CmiMeta;
